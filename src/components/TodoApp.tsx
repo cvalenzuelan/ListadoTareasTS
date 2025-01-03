@@ -20,7 +20,7 @@ export const TodoApp = () => {
 		<div>
 			<h1>Listado de Tareas</h1>
 			<hr />
-			<div>
+			<div className="flex">
 				<input type="text" value={nuevaTarea} onChange={(e) => setNuevaTarea(e.target.value)} placeholder="Ingrese nueva tarea" />
 				<button onClick={agregarTarea}>Agregar Tarea</button>
 				<ListaTareas listaTareas={listaTareas} eliminarTarea={onELiminarTarea}></ListaTareas>
